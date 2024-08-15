@@ -34,6 +34,8 @@ public class EquilibriumSum
         return -1;
     }
 
+
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -46,7 +48,7 @@ public class EquilibriumSum
             arr[i] = sc.nextInt();
         }
 
-        System.out.println("Equilibrium Index is: " + equilibrium(arr));
+        System.out.println("Equilibrium Index is: " + equilibrium1(arr));
         
     }
 } 
