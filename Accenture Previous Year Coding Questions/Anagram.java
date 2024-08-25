@@ -33,7 +33,7 @@ public class Anagram{
         char []arr1 = s.toCharArray(); 
         char []arr2 = t.toCharArray(); 
 
-        Arrays.sort(arr1); // e , i,l, n,s,t 
+        Arrays.sort(arr1); // e,i,l,n,s,t 
         Arrays.sort(arr2); // e,i,l,n,s,t 
 
         if(Arrays.equals(arr1,arr2)){ 
