@@ -21,21 +21,21 @@ public class SetZeroMatrix{
         int rowlen = matrix.length;
         int collen = matrix[0].length;
 
-        int rowarr[] = new int[rowlen];
-        int colarr[] = new int[collen];
+        HashSet<Integer> rowset=new HashSet<>();
+        HashSet<Integer> colset=new HashSet<>();
 
         for(int i = 0; i < rowlen; i++){
             for(int j = 0; j < collen; j++){
                 if(matrix[i][j] == 0){
-                    rowarr[i] = 1;
-                    colarr[j] = 1;
+                    rowset.add(i);
+                  colset.add(j);
                 }
             }
         }
 
         for(int i = 0; i < rowlen; i++){
             for(int j = 0; j < collen; j++){
-                if(rowarr[i] == 1 || colarr[j] == 1){
+                if(rowset.contains(i) || colset.contains(j)){
                     matrix[i][j] = 0;
                 }
             }
